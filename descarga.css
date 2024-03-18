@@ -1,0 +1,180 @@
+/* General */
+body { font-family: Arial, sans-serif; background-color: #001F3F; color: #E0ECFF; }
+
+/* Header */
+header { padding: 20px; display: flex; justify-content: center; }
+
+h1 { font-size: 3em; }
+
+/* Main Content */
+main { padding: 20px; }
+
+.game-card {
+  background-color: #172B43;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.rating, .developer, .version {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.rating .star {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.download {
+  background-color: #41FF00;
+  color: #000;
+}
+
+.download:hover {
+  background-color: #38F000;
+}
+
+.telegram {
+  background-color: #2CA5E0;
+  color: #fff;
+}
+
+.telegram:hover {
+  background-color: #1F8BCD;
+}
+
+.mod-features p {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #888;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .game-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game-logo {
+    margin-bottom: 10px;
+  }
+
+  .game-info {
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
